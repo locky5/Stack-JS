@@ -26,10 +26,22 @@ class Stack {
     return Math.max(...values)
   }
 
+  peekMin() {
+    let values = this.arr.map(node => node.data)
+    return Math.min(...value)
+  }
+
   popMax() {
     let values = this.arr.map(node => node.data)
     let max = Math.max(...values)
     let index = this.arr.lastIndexOf(max)
+    this.arr.splice(index, 1)
+  }
+
+  popMin() {
+    let values = this.arr.map(node => node.data)
+    let min = Math.min(...value)
+    let index = this.arr.lastIndexOf(min)
     this.arr.splice(index, 1)
   }
 
